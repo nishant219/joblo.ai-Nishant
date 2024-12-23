@@ -1,0 +1,35 @@
+{
+  "name": "joblo.ai-linkedin-crawl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test:unit": "mocha --exit",
+    "test:integration": "mocha --exit --recursive test/integration",
+    "test:api": "mocha --exit --recursive test/api",
+    "test:all": "mocha --exit --recursive test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.9.2",
+    "puppeteer": "^23.11.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "chai-http": "^5.1.1",
+    "mocha": "^11.0.1",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
+}
